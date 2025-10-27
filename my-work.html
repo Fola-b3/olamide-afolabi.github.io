@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Work — Olamide Afolabi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0d10; --card:#111418; --text:#e7ebf0; --muted:#a9b4c0; --accent:#4da3ff; --ring:#213245;}
+    *{box-sizing:border-box}
+    body{margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#0f141a); color:var(--text); line-height:1.6}
+    .wrap{max-width:980px; margin:0 auto; padding:32px 20px 56px}
+    header{display:flex; justify-content:space-between; align-items:center; gap:16px}
+    a{color:var(--accent); text-decoration:none}
+    .btn{display:inline-flex; padding:10px 14px; border:1px solid var(--ring); border-radius:12px; font-weight:600; background:#0e1620}
+    .btn:hover{border-color:var(--accent); box-shadow:0 0 0 3px rgba(77,163,255,.12)}
+    .card{background:var(--card); border:1px solid var(--ring); border-radius:18px; padding:18px; margin-top:20px; box-shadow:0 8px 22px rgba(0,0,0,.25)}
+    h1{font-size:clamp(26px,4vw,36px); margin:0}
+    .lead{color:var(--muted); margin-top:6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>My Work</h1>
+        <div class="lead">Interactive dashboards and selected projects</div>
+      </div>
+      <nav>
+        <a class="btn" href="index.html">← Home</a>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </header>
+
+    <section class="card">
+      <h2 style="margin-top:0">Bellabeat App Case Study (Tableau)</h2>
+      <p class="lead">Explore device usage, activity patterns, and engagement insights. Resize your browser—the embed adapts.</p>
+      <div class='tableauPlaceholder' id='viz1662068000896' style='position: relative'><noscript><a href='#'><img alt='Bellabeat app case study ' src='https://public.tableau.com/static/images/Be/BellaappCapstone/Dashboard1/1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BellaappCapstone&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https://public.tableau.com/static/images/Be/BellaappCapstone/Dashboard1/1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+<script type='text/javascript'>
+  var divElement = document.getElementById('viz1662068000896');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+  if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';}
+  else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';}
+  else { vizElement.style.width='100%';vizElement.style.height='1777px';}
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+    </section>
+
+    <footer style="margin-top:28px; color:var(--muted); font-size:14px">
+      © <span id="year"></span> Olamide Afolabi
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
