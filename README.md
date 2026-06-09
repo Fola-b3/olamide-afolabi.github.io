@@ -27,6 +27,7 @@ Developed a robust Python-based analytical workflow tailored for data preprocess
 An end-to-end executive analysis identifying underlying profit leaks and supply chain frictions across United States operational regions. 
 📥 **[Download the Tableau Packaged Workbook (.twbx)](./Afolabi_Olamide_BNAL 403 project.twbx)** 
 #### 📄 Executive Report Summary
+
 *   **The Problem:** While top-line sales are strong, significant profit degradation occurs due to aggressive discounting strategies and systemic regional variance in return metrics.
 *   **Strategic Recommendations:**
     1.  **Implement a 20% Discount Cap on Furniture:** Analysis shows that the *Tables* sub-category consistently operates at a net loss. Capping discounts at 20% protects product margins from dropping below baseline cost structures.
@@ -45,14 +46,12 @@ Features a synchronized spatial heat map and localized trend analysis detailing 
 #### **Severe Tornado Trend Analysis**
 Isolates severe tornado trends over a 15-year horizon, tracking localized spike frequencies to assist risk assessment and emergency readiness models.
 ![Tornado Heatmap and Trend Line Chart](Dashboard 1 (1).png)
-
 ***
 
 ### ⌚ Bellabeat Consumer Smart Device Case Study
 An exploratory health-tracker analysis focused on mapping biometric user trends to optimize consumer wellness app engagement strategies.
 *   **Key Insight:** Monitored activity cycles demonstrate that while users maintain stable step counts early in the week, daily active goals drop off significantly by mid-week, uncovering prime programmatic windows for user re-engagement push notifications.
 ![Bellabeat app case study](Dashboard 1 (2).png)
-
 ---
 
 ## 📫 Connect with Me
