@@ -25,7 +25,7 @@ Developed a robust Python-based analytical workflow tailored for data preprocess
 
 ### 🏪 Superstore Operational Performance Analysis (BNAL 403 Term Project)
 An end-to-end executive analysis identifying underlying profit leaks and supply chain frictions across United States operational regions. 
-
+📥 **[Download the Tableau Packaged Workbook (.twbx)](./Afolabi_Olamide_BNAL 403 project.twbx)** 
 #### 📄 Executive Report Summary
 *   **The Problem:** While top-line sales are strong, significant profit degradation occurs due to aggressive discounting strategies and systemic regional variance in return metrics.
 *   **Strategic Recommendations:**
