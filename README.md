@@ -13,11 +13,19 @@ Welcome to my data science portfolio! I am a Data Science student specializing i
 
 ## 💻 Data Science & Programming Projects
 
-### 🐍 [Automated Data Analysis Pipeline & Modeling](https://github.com/Fola-b3/fall25-mcw-Fola-b3/tree/main/project)
+---
+
+## 💻 Data Science & Programming Projects
+
+### 🐍 [Automated Data Analysis Pipeline & Predictive Modeling](https://github.com/Fola-b3/fall25-mcw-Fola-b3/tree/main/project)
 Developed a robust Python-based analytical workflow tailored for data preprocessing, exploratory data analysis (EDA), and predictive performance evaluation.
-*   **Core Engineering:** Built structured data cleaning and transformation pipelines handling missing values, encoding, and feature alignment.
-*   **Statistical Evaluation:** Implemented machine learning architectures to discover key variable relationships and predict target outcomes.
-*   **Business Value:** Translates raw, unformatted datasets into structured, production-ready inputs for reliable downstream statistical inference.
+* **Data Pipeline & ETL:** Built structured data cleaning routines utilizing `Pandas` and `NumPy` to handle missing values, optimize feature types, and align data structures for modeling.
+* **Exploratory Analysis:** Implemented automated visualization functions (`Matplotlib`/`Seaborn`) to uncover correlations, statistical distributions, and outliers in raw datasets.
+* **Predictive Architecture:** Integrated machine learning models using `Scikit-Learn` to evaluate dataset patterns, isolate high-impact features, and calculate predictive performance metrics (such as MSE, R², or accuracy scores).
+* **Repository Artifacts:** Features clean, modular, and reusable Python scripts designed to transition raw data into production-ready inputs for business forecasting.
+
+👉 **[Explore the Python Source Code & Notebooks](https://github.com/Fola-b3/fall25-mcw-Fola-b3/tree/main/project)**
+
 
 ---
 
@@ -41,17 +49,17 @@ A dual-dashboard suite designed to map severe weather incidents and isolate high
 
 #### **Primary Data Set Dashboard**
 Features a synchronized spatial heat map and localized trend analysis detailing overall historical event counts across specific zones.
-![Primary data set dashboard](Dashboard 1.png)
+![Primary data set dashboard](primary.png)
 
 #### **Severe Tornado Trend Analysis**
 Isolates severe tornado trends over a 15-year horizon, tracking localized spike frequencies to assist risk assessment and emergency readiness models.
-![Tornado Heatmap and Trend Line Chart](Dashboard 1 (1).png)
+![Tornado Heatmap and Trend Line Chart](heatmap.png)
 ***
 
 ### ⌚ Bellabeat Consumer Smart Device Case Study
 An exploratory health-tracker analysis focused on mapping biometric user trends to optimize consumer wellness app engagement strategies.
 *   **Key Insight:** Monitored activity cycles demonstrate that while users maintain stable step counts early in the week, daily active goals drop off significantly by mid-week, uncovering prime programmatic windows for user re-engagement push notifications.
-![Bellabeat app case study](Dashboard 1 (2).png)
+![Bellabeat app case study](bellabeatapp.png)
 ---
 
 ## 📫 Connect with Me
