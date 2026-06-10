@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olamide Afolabi | Data Science Portfolio</title>
+    <title>Olamide Afolabi | Data Science & Analytics Portfolio</title>
     <style>
         :root {
             --bg-color: #f8f9fa;
             --text-color: #212529;
-            --primary-color: #003366; /* Deep professional blue */
+            --primary-color: #003366; /* Deep corporate blue */
             --accent-color: #4a5568;
             --card-bg: #ffffff;
             --border-color: #e2e8f0;
@@ -151,92 +151,142 @@
         .download-btn:hover {
             opacity: 0.9;
         }
+
+        .secondary-btn {
+            display: inline-block;
+            background-color: #fff;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            margin-top: 10px;
+            margin-right: 15px;
+        }
+
+        .secondary-btn:hover {
+            background-color: #edf2f7;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- HEADER SECTION -->
+        <!-- HEADER -->
         <header>
             <h1>Olamide Afolabi</h1>
             <p>Data Science Student | Business Analytics & Predictive Modeling Specialist</p>
             <div class="links">
                 <a href="https://github.com/Fola-b3" target="_blank">GitHub Profile</a>
-                <a href="#" target="_blank">LinkedIn Profile</a> <!-- Swap '#' with your actual link -->
+                <a href="#" target="_blank">LinkedIn Profile</a>
             </div>
         </header>
 
-        <!-- FEATURED PROJECT SECTION (SUPERSTORE) -->
+        <!-- PROJECT 1: EXPLORING THE TOP 5 SAFEST STATES IN THE USA -->
         <section>
-            <h2>🏆 Featured Project</h2>
+            <h2>🏆 Featured Data Science Case Study</h2>
             <div class="featured-project">
+                <h3 class="project-title">U.S. Violent Crime Analysis & Regional Metrics Evaluation</h3>
+                <span class="tag">Python (Pandas)</span>
+                <span class="tag">Matplotlib</span>
+                <span class="tag">Data Engineering / ETL</span>
+                <span class="tag">Statistical Modeling</span>
+                
+                <p><strong>CS 625 Graduate Final Project:</strong> Developed a programmatic data pipeline to clean, filter, and evaluate historical Federal Bureau of Investigation (FBI) and U.S. Department of Justice datasets spanning 1960 through 2019. The analysis isolates continuous metric distributions across violent crime definitions to identify geographic safety patterns.</p>
+                
+                <h4>🛠️ Data Pipeline & ETL Architecture</h4>
+                <p>To eliminate statistical bias and ensure modern analytical comparative constraints, a dedicated Python ETL pipeline was constructed to execute the following optimizations:</p>
+                <ul>
+                    <li><strong>Feature Extraction:</strong> Isolated critical target arrays: <code>State, Year, Population, Data.Rates.Violent.All, Data.Totals.Violent.All</code>.</li>
+                    <li><strong>Temporal Filtering:</strong> Extracted a clean multi-decade matrix restricting evaluation fields to the years 2000 through 2019.</li>
+                    <li><strong>Anomaly Mitigation:</strong> Systematically removed aggregate national summaries (e.g., 'United States' totals rows) to ensure independent state computations, handled numeric formatting transformations, and dropped incomplete array strings.</li>
+                </ul>
+
+                <h4>📈 Empirical Insights & Baseline Comparisons</h4>
+                <p>By computing an analytical baseline representing the national violent crime metric (calculating total nationwide violent events against absolute U.S. population matrices), a baseline reference score of <strong>379.4 incidents per 100,000 residents</strong> was established. Filtering for the latest reporting period isolated a tight cluster of safe zones centered in the Northeastern region:</p>
+                
+                <ul>
+                    <li><strong>1. Maine:</strong> 115.2 per 100k residents (Lowest baseline distribution nationwide)</li>
+                    <li><strong>2. New Hampshire:</strong> 152.5 per 100k residents</li>
+                    <li><strong>3. Connecticut:</strong> 183.6 per 100k residents</li>
+                    <li><strong>4. Vermont:</strong> 202.2 per 100k residents</li>
+                    <li><strong>5. New Jersey:</strong> 206.9 per 100k residents</li>
+                </ul>
+
+                <h4>📊 Horizontal Visual Ranking Model</h4>
+                <p>A horizontal axis configuration was chosen to eliminate textual overlap on category labels. This visualization overlays a calculated national average parameter line to establish immediate comparative contrast.</p>
+                
+                <img src="portfolio/barchart.png" alt="Top 5 Safest US States Horizontal Bar Chart" class="project-img" style="max-width: 600px; display: block; margin: 0 auto;">
+
+                <div class="links" style="margin-top: 20px;">
+                    <a href="https://github.com/Fola-b3/olamide-afolabi.github.io/blob/main/portfolio/cleaned_dataset.py" target="_blank">🔗 View Pipeline Script (cleaned_dataset.py)</a>
+                    <a href="https://github.com/Fola-b3/olamide-afolabi.github.io/blob/main/portfolio/top5states.py" target="_blank">🔗 View Plotting Script (top5states.py)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECT 2: SUPERSTORE BUSINESS INTELLIGENCE -->
+        <section>
+            <h2>📊 Business Intelligence & Analytics Audits</h2>
+            <div class="project-card">
                 <h3 class="project-title">Superstore Operational Performance Analysis</h3>
                 <span class="tag">Tableau Desktop</span>
-                <span class="tag">Business Intelligence</span>
-                <span class="tag">Operational Audit</span>
+                <span class="tag">Operational Auditing</span>
+                <span class="tag">Margin Optimization</span>
                 
-                <p><strong>BNAL 403 Business Analytics Term Project:</strong> An end-to-end operational audit identifying deep profit leaks and supply chain friction points across United States retail regions. This analysis targets strategic discount management and logistics optimizations.</p>
+                <p><strong>BNAL 403 Business Analytics Term Project:</strong> Conducted a corporate diagnostic operational audit evaluating product margin distributions across regional retail networks to flag profit degradation vectors.</p>
                 
-                <h4>📄 Executive Summary Findings</h4>
-                <ul>
-                    <li><strong>The Furniture Profit Leak:</strong> Granular sub-category analysis reveals that the <em>Tables</em> segment operates at a consistent net loss due to excessive promotional markdowns[cite: 1].</li>
-                    <li><strong>Logistics & Return Headwinds:</strong> Return metrics vary significantly by geographic region, eroding local margins through compounding reverse logistics overhead[cite: 1].</li>
-                </ul>
+                <img src="portfolio/primary.png" alt="Superstore Operations Dashboard" class="project-img">
+                <img src="portfolio/heatmap.png" alt="Severe Event Metrics Tracker" class="project-img">
 
-                <h4>📈 Interactive Analytics Dashboard</h4>
-                <!-- Displays your Tableau screenshot dynamically -->
-                <img src="Dashboard 1.png" alt="Superstore Operations Dashboard" class="project-img">
-                <img src="Dashboard 1 (1).png" alt="Severe Event Metrics Tracker" class="project-img">
-
-                <h4>🎯 Recommendations Implemented</h4>
-                <ul>
-                    <li>Implement a strict 20% discount cap on critical Furniture sub-categories[cite: 1].</li>
-                    <li>Mandate localized causality audits via regional managers in high-return states to isolate efficient carrier alternatives[cite: 1].</li>
-                </ul>
-
-                <a href="Superstore report.docx" class="download-btn" download>📥 Download Full Report (.docx)</a>
-                <a href="Superstore_Analysis.twbx" class="download-btn" download>📊 Download Workbook (.twbx)</a>
+                <div style="margin-top: 15px;">
+                    <a href="portfolio/Superstore report.docx" class="download-btn" download>📥 Download Report (.docx)</a>
+                    <a href="portfolio/Superstore_Analysis.twbx" class="download-btn" download>📊 Download Workbook (.twbx)</a>
+                    <a href="#" target="_blank" class="secondary-btn">🌐 Review on Tableau Public</a> <!-- Replace # with your real link if published online -->
+                </div>
             </div>
         </section>
 
-        <!-- CODING PROJECTS SECTION -->
+        <!-- PROJECT 3: HARDWARE/SPATIAL ENGINEERING -->
         <section>
-            <h2>💻 Data Science & Programming Projects</h2>
+            <h2>💻 Technical Engineering & Structural Modifications</h2>
             <div class="project-card">
-                <h3 class="project-title">
-                    <a href="https://github.com/Fola-b3/fall25-mcw-Fola-b3/tree/main/project" target="_blank">Automated Data Analysis Pipeline & Predictive Modeling</a>
-                </h3>
-                <span class="tag">Python</span>
-                <span class="tag">Pandas / NumPy</span>
-                <span class="tag">Scikit-Learn</span>
-                <p>A robust Python-based analytical workflow tailored for algorithmic data cleaning, exploratory data analysis (EDA), and machine learning performance evaluations.</p>
+                <h3 class="project-title">Structural Configuration & Assembly Optimization — LEGO Porsche 911</h3>
+                <span class="tag">Spatial Engineering</span>
+                <span class="tag">Structural Optimization</span>
+                <p>Managed a complex mechanical reconstruction workflow transforming the baseline design architecture from its Targa specification into a highly complex Turbo Coupe engineering layout.</p>
                 <ul>
-                    <li>Built automated preprocessing pipelines to handle missing data fields and standardize raw inputs.</li>
-                    <li>Integrated machine learning models using Scikit-Learn to map complex statistical variables.</li>
+                    <li>Reconciled complex modular configuration shifts while tracking spatial part dependencies to eliminate component structural fatigue.</li>
                 </ul>
-                <a href="https://github.com/Fola-b3/fall25-mcw-Fola-b3/tree/main/project" target="_blank" style="color: var(--primary-color); font-weight: bold; text-decoration: none;">Explore Source Code &rarr;</a>
             </div>
         </section>
 
-        <!-- ADDITIONAL CASE STUDIES -->
+        <!-- PROJECT 4: MARKETING ANALYTICS -->
         <section>
-            <h2>📊 Additional Case Studies</h2>
+            <h2>📈 Exploratory Consumer Behavior Studies</h2>
             <div class="project-card">
                 <h3 class="project-title">Bellabeat Consumer Smart Device Analytics</h3>
                 <span class="tag">Tableau Public</span>
-                <span class="tag">Consumer Metrics</span>
-                <p>An exploratory health-tracker dataset analysis tracking consumer biometric trends to discover ideal optimization and re-engagement windows for mobile push marketing notifications.</p>
-                <img src="Dashboard 1 (2).png" alt="Bellabeat App Case Study Dashboard" class="project-img">
+                <span class="tag">User Metrics</span>
+                <p>Exploratory tracking data research project capturing consumer health-biometrics behavior variables to optimize mobile marketing notifications engagement timing.</p>
+                
+                <img src="portfolio/bellabeatapp.png" alt="Bellabeat App Case Study Dashboard" class="project-img">
+                
+                <div style="margin-top: 15px;">
+                    <a href="#" target="_blank" class="secondary-btn">🌐 Review Interactive Dashboard on Tableau Public</a>
+                </div>
             </div>
         </section>
 
-        <!-- SKILLS MATRIX -->
+        <!-- TECHNICAL TOOLKIT -->
         <section>
             <h2>🛠️ Technical Toolkit</h2>
             <ul>
-                <li><strong>Languages:</strong> Python (Pandas, NumPy, Scikit-Learn), R Studio, SQL</li>
-                <li><strong>Data Visualization:</strong> Tableau Desktop, Matplotlib, Seaborn</li>
-                <li><strong>Core Focus:</strong> Statistical Analysis, Business Intelligence, Data Engineering & ETL, Predictive Analytics</li>
+                <li><strong>Languages:</strong> Python (Pandas, NumPy, Scikit-Learn, Matplotlib), R Studio, SQL</li>
+                <li><strong>Data Visualization & Tools:</strong> Tableau Desktop, Tableau Public, Git, Jupyter Notebooks</li>
+                <li><strong>Methodologies:</strong> Data Engineering & ETL, Business Intelligence Auditing, Statistical Analysis, Matrix Filtering</li>
             </ul>
         </section>
     </div>
