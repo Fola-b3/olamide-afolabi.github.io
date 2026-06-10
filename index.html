@@ -1,85 +1,245 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Olamide Afolabi — Data Analyst</title>
-  <meta name="description" content="Personal website for Olamide Afolabi, Data Analyst skilled in SQL, Python, R, Tableau, and Excel.">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#0b0d10; --card:#111418; --text:#e7ebf0; --muted:#a9b4c0; --accent:#4da3ff; --ring:#213245;
-    }
-    *{box-sizing:border-box}
-    body{margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#0f141a); color:var(--text); line-height:1.6}
-    .wrap{max-width:880px; margin:0 auto; padding:32px 20px 56px}
-    header{display:flex; gap:24px; align-items:center; flex-wrap:wrap; margin-top:12px}
-    .photo{width:132px; height:132px; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.35), 0 0 0 1px var(--ring)}
-    .photo img{width:100%; height:100%; object-fit:cover}
-    h1{font-size:clamp(28px,4.4vw,40px); margin:0; letter-spacing:-.02em}
-    .role{margin-top:4px; color:var(--muted)}
-    .card{background:var(--card); border:1px solid var(--ring); border-radius:18px; padding:20px; margin-top:20px; box-shadow:0 8px 22px rgba(0,0,0,.25)}
-    .btns{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
-    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:12px; text-decoration:none; font-weight:600; border:1px solid var(--ring); background:#0e1620}
-    .btn:hover{border-color:var(--accent); box-shadow:0 0 0 3px rgba(77,163,255,.12)}
-    .btn svg{width:18px; height:18px}
-    .grid{display:grid; grid-template-columns:1fr; gap:16px; margin-top:18px}
-    @media (min-width:740px){ .grid{grid-template-columns:1.4fr 1fr} }
-    footer{margin-top:28px; color:var(--muted); font-size:14px}
-    a{color:var(--accent)}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olamide Afolabi | Data Science Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #212529;
+            --primary-color: #003366; /* Deep professional blue */
+            --accent-color: #4a5568;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            margin: 0;
+        }
+
+        .links {
+            margin-top: 15px;
+        }
+
+        .links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            font-size: 1.75rem;
+        }
+
+        .featured-project {
+            background-color: var(--card-bg);
+            border: 2px solid var(--primary-color);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .project-title a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .project-title a:hover {
+            text-decoration: underline;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #edf2f7;
+            color: #4a5568;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-right: 8px;
+            margin-bottom: 10px;
+        }
+
+        .project-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 15px 0;
+            border: 1px solid var(--border-color);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            margin-top: 10px;
+            margin-right: 15px;
+        }
+
+        .download-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="photo" aria-hidden="true">
-        <img src="profile.jpg" alt="Portrait of Olamide Afolabi">
-      </div>
-      <div>
-        <h1>Olamide Afolabi</h1>
-        <div class="role">Data Analyst • SQL · Python · R · Tableau · Excel</div>
-        <div class="btns">
-          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">
-            <!-- file icon -->
-            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
-            <span>Resume (PDF)</span>
-          </a>
-          <a class="btn" href="mailto:holartobad@gmail.com">
-            <!-- mail icon -->
-            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.01L12 13l8-6.99V6l-8 7L4 6z"/></svg>
-            <span>Email</span>
-          </a>
-        </div>
-      
-    <nav class="btns" style="margin-top:18px">
-      <a class="btn" href="my-work.html" aria-label="View my work">My Work</a>
-    </nav>
-    
+
+    <div class="container">
+        <!-- HEADER SECTION -->
+        <header>
+            <h1>Olamide Afolabi</h1>
+            <p>Data Science Student | Business Analytics & Predictive Modeling Specialist</p>
+            <div class="links">
+                <a href="https://github.com/Fola-b3" target="_blank">GitHub Profile</a>
+                <a href="#" target="_blank">LinkedIn Profile</a> <!-- Swap '#' with your actual link -->
+            </div>
+        </header>
+
+        <!-- FEATURED PROJECT SECTION (SUPERSTORE) -->
+        <section>
+            <h2>🏆 Featured Project</h2>
+            <div class="featured-project">
+                <h3 class="project-title">Superstore Operational Performance Analysis</h3>
+                <span class="tag">Tableau Desktop</span>
+                <span class="tag">Business Intelligence</span>
+                <span class="tag">Operational Audit</span>
+                
+                <p><strong>BNAL 403 Business Analytics Term Project:</strong> An end-to-end operational audit identifying deep profit leaks and supply chain friction points across United States retail regions. This analysis targets strategic discount management and logistics optimizations.</p>
+                
+                <h4>📄 Executive Summary Findings</h4>
+                <ul>
+                    <li><strong>The Furniture Profit Leak:</strong> Granular sub-category analysis reveals that the <em>Tables</em> segment operates at a consistent net loss due to excessive promotional markdowns[cite: 1].</li>
+                    <li><strong>Logistics & Return Headwinds:</strong> Return metrics vary significantly by geographic region, eroding local margins through compounding reverse logistics overhead[cite: 1].</li>
+                </ul>
+
+                <h4>📈 Interactive Analytics Dashboard</h4>
+                <!-- Displays your Tableau screenshot dynamically -->
+                <img src="Dashboard 1.png" alt="Superstore Operations Dashboard" class="project-img">
+                <img src="Dashboard 1 (1).png" alt="Severe Event Metrics Tracker" class="project-img">
+
+                <h4>🎯 Recommendations Implemented</h4>
+                <ul>
+                    <li>Implement a strict 20% discount cap on critical Furniture sub-categories[cite: 1].</li>
+                    <li>Mandate localized causality audits via regional managers in high-return states to isolate efficient carrier alternatives[cite: 1].</li>
+                </ul>
+
+                <a href="Superstore report.docx" class="download-btn" download>📥 Download Full Report (.docx)</a>
+                <a href="Superstore_Analysis.twbx" class="download-btn" download>📊 Download Workbook (.twbx)</a>
+            </div>
+        </section>
+
+        <!-- CODING PROJECTS SECTION -->
+        <section>
+            <h2>💻 Data Science & Programming Projects</h2>
+            <div class="project-card">
+                <h3 class="project-title">
+                    <a href="https://github.com/Fola-b3/fall25-mcw-Fola-b3/tree/main/project" target="_blank">Automated Data Analysis Pipeline & Predictive Modeling</a>
+                </h3>
+                <span class="tag">Python</span>
+                <span class="tag">Pandas / NumPy</span>
+                <span class="tag">Scikit-Learn</span>
+                <p>A robust Python-based analytical workflow tailored for algorithmic data cleaning, exploratory data analysis (EDA), and machine learning performance evaluations.</p>
+                <ul>
+                    <li>Built automated preprocessing pipelines to handle missing data fields and standardize raw inputs.</li>
+                    <li>Integrated machine learning models using Scikit-Learn to map complex statistical variables.</li>
+                </ul>
+                <a href="https://github.com/Fola-b3/fall25-mcw-Fola-b3/tree/main/project" target="_blank" style="color: var(--primary-color); font-weight: bold; text-decoration: none;">Explore Source Code &rarr;</a>
+            </div>
+        </section>
+
+        <!-- ADDITIONAL CASE STUDIES -->
+        <section>
+            <h2>📊 Additional Case Studies</h2>
+            <div class="project-card">
+                <h3 class="project-title">Bellabeat Consumer Smart Device Analytics</h3>
+                <span class="tag">Tableau Public</span>
+                <span class="tag">Consumer Metrics</span>
+                <p>An exploratory health-tracker dataset analysis tracking consumer biometric trends to discover ideal optimization and re-engagement windows for mobile push marketing notifications.</p>
+                <img src="Dashboard 1 (2).png" alt="Bellabeat App Case Study Dashboard" class="project-img">
+            </div>
+        </section>
+
+        <!-- SKILLS MATRIX -->
+        <section>
+            <h2>🛠️ Technical Toolkit</h2>
+            <ul>
+                <li><strong>Languages:</strong> Python (Pandas, NumPy, Scikit-Learn), R Studio, SQL</li>
+                <li><strong>Data Visualization:</strong> Tableau Desktop, Matplotlib, Seaborn</li>
+                <li><strong>Core Focus:</strong> Statistical Analysis, Business Intelligence, Data Engineering & ETL, Predictive Analytics</li>
+            </ul>
+        </section>
     </div>
-    </header>
 
-    <main class="grid">
-      <section class="card">
-        <h2>About</h2>
-        <p>I'm a data analyst with a passion for turning messy data into clear, actionable stories. I work with SQL, Python, R, Tableau, and Excel to build reliable pipelines, analyses, and visualizations that help teams make faster, smarter decisions.</p>
-        <p>Currently pursuing an M.S. in Data Science &amp; Business Analytics at Old Dominion University. I also hold a B.S. in Psychology and a Google Data Analytics Professional Certificate.</p>
-      </section>
-
-      <aside class="card">
-        <h2>Quick Facts</h2>
-        <ul>
-          <li>Location: Richmond, VA</li>
-          <li>Languages: English, Yoruba, French</li>
-          <li>Interests: Business ops, dashboards, predictive modeling</li>
-        </ul>
-      </aside>
-    </main>
-
-    <footer>
-      © <span id="year"></span> Olamide Afolabi — Built with HTML &amp; CSS
-    </footer>
-  </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
